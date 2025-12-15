@@ -1,0 +1,7 @@
+{
+  "name": "math-api-challenge",
+  "version": "1.0.0",
+  "description": "Hackathon submission",
+  "main": "src/utils.js",
+  "author": "test"
+}
