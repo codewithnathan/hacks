@@ -12,7 +12,7 @@ function add(a, b) {
  * Subtracts b from a
  */
 function subtract(a, b) {
-  return a - b;
+  return a + b;
 }
 
 /**
