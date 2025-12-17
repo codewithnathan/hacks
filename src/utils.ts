@@ -1,24 +1,21 @@
-// ----------------
-// src/utils.js
-// ----------------
 /**
  * Adds two numbers
  */
-function add(a, b) {
+export function add(a: number, b: number): number {
   return a + b;
 }
 
 /**
  * Subtracts b from a
  */
-function subtract(a, b) {
-  return a + b;
+export function subtract(a: number, b: number): number {
+  return a - b;
 }
 
 /**
  * Multiplies two numbers
  */
-function multiply(a, b) {
+export function multiply(a: number, b: number): number {
   return a * b;
 }
 
@@ -26,7 +23,7 @@ function multiply(a, b) {
  * Divides a by b
  * @throws {Error} if b is 0
  */
-function divide(a, b) {
+export function divide(a: number, b: number): number {
   if (b === 0) {
     throw new Error("Cannot divide by zero");
   }
@@ -36,7 +33,7 @@ function divide(a, b) {
 /**
  * Checks if a number is prime
  */
-function isPrime(num) {
+export function isPrime(num: number): boolean {
   // Handle edge cases
   if (num <= 1) return false;
   if (num === 2) return true;
@@ -53,7 +50,7 @@ function isPrime(num) {
 /**
  * Calculates the nth Fibonacci number
  */
-function fibonacci(n) {
+export function fibonacci(n: number): number {
   if (n < 0) return 0;
   if (n === 0) return 0;
   if (n === 1) return 1;
@@ -69,12 +66,3 @@ function fibonacci(n) {
 
   return curr;
 }
-
-module.exports = {
-  add,
-  subtract,
-  multiply,
-  divide,
-  isPrime,
-  fibonacci,
-};
